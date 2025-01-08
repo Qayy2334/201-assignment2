@@ -33,11 +33,6 @@
           <ul>
             <li class="title1">Penang Island</li>
             <li><a href="#" onclick="showSection(event, 'home')">Home</a></li>
-            <li>
-              <a href="#" onclick="showSection(event, 'things-to-do')"
-                >Things to Do</a
-              >
-            </li>
             <li><a href="#" onclick="showSection(event, 'food')">Food</a></li>
             <li>
               <a href="#" onclick="showSection(event, 'scenic-spots')"
@@ -64,7 +59,6 @@
               <button id="next">&#10095;</button>
             </div>
           </div>
-
           <script>
             let currentIndex = 0;
             const carouselContainer = document.querySelector(
@@ -72,183 +66,147 @@
             );
             const totalImages =
               document.querySelectorAll(".carousel img").length;
-
+  
             function showImage(index) {
               carouselContainer.style.transform = `translateX(${
                 -index * 100
               }%)`;
             }
-
+  
             document
               .getElementById("prev")
               .addEventListener("click", function () {
                 currentIndex = (currentIndex - 1 + totalImages) % totalImages;
                 showImage(currentIndex);
               });
-
+  
             document
               .getElementById("next")
               .addEventListener("click", function () {
                 currentIndex = (currentIndex + 1) % totalImages;
                 showImage(currentIndex);
               });
-
+  
             // Initialize carousel display
             showImage(currentIndex);
           </script>
-          <h2>Penang Introduction</h2>
-          <h3>Penang Island</h3>
-          <p>
-            Penang State, referred to as "Penang", is one of the thirteen
-            federal states of Malaysia. It is located in the northwest of
-            Malaysia, with an area of ​​1,049 square kilometers. The state is
-            divided into two parts by the Penang Strait: Penang Island and
-            Seberang Perai. The total population is 1,766,800. The state
-            capital, George Town, is an important port city and the second
-            largest city in Malaysia after the capital Kuala Lumpur.
-          </p>
-          <h3>location</h3>
-          <p>
-            Penang (English: Penang: Malay: Pulau Pinang), formerly known as
-            Penang Island, referred to as Penang is one of the thirteen federal
-            states of Malaysia, located on the northwest side of the Malayan
-            Peninsula. by Bounded by the Penang Strait, Penang is divided into
-            two parts: Penang Island and Seberang Perai. Among them, the eastern
-            and northern parts of Seberang Perai and Kedah is adjacent to the
-            state of Perak in the south; while Penang Island is separated from
-            the Indonesian island of Sumatra in the west. Strait of Malacca
-            Opposite. Penang is 357 kilometers from the capital Kuala Lumpur.
-          </p>
-          <h3>History of Penang</h3>
-          <p>
-            Penang has a long history and multicultural heritage. Its history
-            can be traced back to BC, when it was an island inhabited by
-            indigenous peoples in the early days. The real turning point in
-            history came in 1786, when Colonel Francis Light of the British East
-            India Company successfully acquired Penang Island from the Sultan of
-            Malacca and made it an important British colony in Southeast Asia.
-            Penang has since become a strategic location and a British trade and
-            shipping center, attracting a large number of immigrants from China,
-            India and the Malay Archipelago, especially the Chinese, who occupy
-            an important position in Penang's economic and social life. Entering
-            the 19th century, Penang experienced a golden period of development,
-            especially driven by the rubber, tin and spice trades, and its
-            economy prospered. With the growth of the immigrant population,
-            Penang gradually formed a diversified social structure, especially
-            the Chinese groups from Fujian and Guangdong made great
-            contributions to Penang's culture and economy. At the same time,
-            George Town also built many commercial buildings and colonial-style
-            residences during this period, becoming a city with a strong
-            historical atmosphere. However, during World War II, Penang was
-            occupied by Japan, and from 1941 to 1945, the island experienced
-            great changes. After the war, Penang returned to British control and
-            became part of the newly formed Malaysia in 1957 with the
-            independence of Malaysia. In the mid-20th century, Penang
-            transformed into an industrialized city and became a center for
-            manufacturing and electronics, attracting a large amount of foreign
-            investment. Today, Penang is not only an economic center of
-            Malaysia, but also attracts tourists from all over the world with
-            its rich history and culture. As a world cultural heritage site,
-            George Town showcases Penang's multicultural blend and historical
-            charm. The history of Penang is a process of cultural integration of
-            various ethnic groups in China, Britain and Malaysia. It not only
-            carries the traditional colonial history, but also provides a rich
-            cultural background for modernization and globalization, becoming a
-            unique tourism and economic center.
-          </p>
-        </div>
+  
+              <h2>Penang Introduction</h2>
+              <h3>Penang Island</h3>
+              <p>
+                Penang State, referred to as "Penang", is one of the thirteen
+                federal states of Malaysia. It is located in the northwest of
+                Malaysia, with an area of ​​1,049 square kilometers. The state is
+                divided into two parts by the Penang Strait: Penang Island and
+                Seberang Perai. The total population is 1,766,800. The state
+                capital, George Town, is an important port city and the second
+                largest city in Malaysia after the capital Kuala Lumpur.
+              </p>
+              <h3>location</h3>
+              <p>
+                Penang (English: Penang: Malay: Pulau Pinang), formerly known as
+                Penang Island, referred to as Penang is one of the thirteen federal
+                states of Malaysia, located on the northwest side of the Malayan
+                Peninsula. by Bounded by the Penang Strait, Penang is divided into
+                two parts: Penang Island and Seberang Perai. Among them, the eastern
+                and northern parts of Seberang Perai and Kedah is adjacent to the
+                state of Perak in the south; while Penang Island is separated from
+                the Indonesian island of Sumatra in the west. Strait of Malacca
+                Opposite. Penang is 357 kilometers from the capital Kuala Lumpur.
+              </p>
+              <h3>History of Penang</h3>
+              <p>
+                Penang has a long history and multicultural heritage. Its history
+                can be traced back to BC, when it was an island inhabited by
+                indigenous peoples in the early days. The real turning point in
+                history came in 1786, when Colonel Francis Light of the British East
+                India Company successfully acquired Penang Island from the Sultan of
+                Malacca and made it an important British colony in Southeast Asia.
+                Penang has since become a strategic location and a British trade and
+                shipping center, attracting a large number of immigrants from China,
+                India and the Malay Archipelago, especially the Chinese, who occupy
+                an important position in Penang's economic and social life. Entering
+                the 19th century, Penang experienced a golden period of development,
+                especially driven by the rubber, tin and spice trades, and its
+                economy prospered. With the growth of the immigrant population,
+                Penang gradually formed a diversified social structure, especially
+                the Chinese groups from Fujian and Guangdong made great
+                contributions to Penang's culture and economy. At the same time,
+                George Town also built many commercial buildings and colonial-style
+                residences during this period, becoming a city with a strong
+                historical atmosphere. However, during World War II, Penang was
+                occupied by Japan, and from 1941 to 1945, the island experienced
+                great changes. After the war, Penang returned to British control and
+                became part of the newly formed Malaysia in 1957 with the
+                independence of Malaysia. In the mid-20th century, Penang
+                transformed into an industrialized city and became a center for
+                manufacturing and electronics, attracting a large amount of foreign
+                investment. Today, Penang is not only an economic center of
+                Malaysia, but also attracts tourists from all over the world with
+                its rich history and culture. As a world cultural heritage site,
+                George Town showcases Penang's multicultural blend and historical
+                charm. The history of Penang is a process of cultural integration of
+                various ethnic groups in China, Britain and Malaysia. It not only
+                carries the traditional colonial history, but also provides a rich
+                cultural background for modernization and globalization, becoming a
+                unique tourism and economic center.
+              </p>
+      </div>
+  
 
-        <div id="things-to-do" class="content-section" style="display: none">
-          <h3>Things to Do</h3>
-          <p>这里是Things to Do的内容...</p>
+      <div id="food" class="content-section">
+        <div class="container">
+          <!-- 每个卡片的结构 -->
+          <a href="hokkien-mee.html" class="card">
+            <img src="OIP (1).jpg" alt="Penang Hokkien Mee">
+            <div class="label1">Hokkien Mee</div>
+          </a>
+      
+          <a href="Penang Laksa.html" class="card">
+            <img src="OIP (2).jpg" alt="Penang Laksa">
+            <div class="label2">Penang Laksa</div>
+          </a>
+      
+          <a href="Penang Satay.html" class="card">
+            <img src="OIP (3).jpg" alt="Penang Satay">
+            <div class="label3">Penang Satay</div>
+          </a>
+      
+          <a href="Penang Hainanese Chicken Rice.html" class="card">
+            <img src="OIP (4).jpg" alt="Penang Hainanese Chicken Rice">
+            <div class="label4">Penang Hainanese Chicken Rice</div>
+          </a>
         </div>
+      </div> <!-- 这里添加了闭合的 div -->
+        
+        
 
-        <div id="food" class="content-section" style="display: none">
-          <h2>Food</h2>
-          <p>
-            Penang is the food capital of Malaysia, with world-renowned street
-            food and traditional delicacies. The food here is influenced by
-            Malay, Chinese, Indian and other cultures. Here are some of the
-            classic dishes in Penang
-          </p>
-          <h3>Penang Hokkien Mee</h3>
-          <img class="Penang Hokkien Mee" src="OIP (1).jpg" alt="Image" />
-          <p>
-            This Hokkien mee is one of Penang's most iconic delicacies. It is
-            based on pork bone or seafood broth, with rice noodles, shrimp, pork
-            and eggs added to create a rich and delicious broth. It is often
-            sprinkled with soy sauce and chili to add flavor.
-          </p>
-          <h3>Penang Laksa</h3>
-          <img class="Penang Laksa" src="OIP (2).jpg" alt="Image" />
-          <p>
-            Penang Betel Nut Noodles (or Penang Sour Noodle Soup) is a very
-            popular local delicacy. Its characteristic lies in the sour and
-            spicy soup base, which usually uses mackerel as the main ingredient,
-            and adds herbs, chili, dried shrimps, etc. The taste is sour, spicy,
-            fresh and fragrant, and it is very appetizing.
-          </p>
-          <h3>Penang Satay</h3>
-          <img class="Penang Laksa" src="OIP (3).jpg" alt="Image" />
-          <p>
-            Satay is a common street food in Malaysia and Singapore, and Penang
-            is particularly famous for its satay. Satay is made of chicken, beef
-            or lamb skewers, grilled over charcoal, and served with peanut
-            sauce, cucumber and onion. It is crispy on the outside and tender on
-            the inside, and full of flavor.
-          </p>
-          <h3>Penang Hainanese Chicken Rice</h3>
-          <img class="Penang Laksa" src="OIP (4).jpg" alt="Image" />
-          <p>
-            Hainanese chicken rice is a classic delicacy that is popular in
-            Malaysia. The Hainanese chicken rice in Penang has tender chicken,
-            rice cooked in chicken broth, and seasonings such as soy sauce,
-            ginger garlic sauce, etc. It is simple but very flavorful.
-          </p>
+      <div id="scenic-spots" class="content-section">
+        <h2>Scenic Spots</h2>
+        <div class="container">
+          <a href="https://www.youtube.com/watch?v=P6Q2hf46VFc" target="_blank" class="spot">
+            <img src="OIP (5).jpg" alt="Tokong Kek Lok Si">
+            <div class="label1">Tokong Kek Lok Si</div>
+          </a>
+      
+          <a href="https://www.youtube.com/watch?v=7rzBlOnRWz0" target="_blank" class="spot">
+            <img src="OIP (6).jpg" alt="Penang Hill">
+            <div class="label2">Penang Hill</div>
+          </a>
+      
+          <a href="https://www.youtube.com/watch?v=mPEA4mBPGqY" target="_blank" class="spot">
+            <img src="OIP (9).jpg" alt="Penang Satay">
+            <div class="label3">Taman Negara Pulau Pinang</div>
+          </a>
+      
+          <a href="https://www.youtube.com/watch?v=cp0NsYB1gw0" target="_blank" class="spot">
+            <img src="OIP (10).jpg" alt="Penang Hainanese Chicken Rice">
+            <div class="label4">George Town</div>
+          </a>
         </div>
+      </div>
 
-        <div id="scenic-spots" class="content-section" style="display: none">
-          <h2>Scenic Spots</h2>
-          <div class="container">
-            <div class="text">
-              <p>Tokong Kek Lok Si</p>
-            </div>
-            <div class="im"><img src="OIP (5).jpg" alt="Photo1" /></div>
-          </div>
-          <div class="container">
-            <div class="text">
-              <p>Penang Hill</p>
-            </div>
-            <div class="im"><img src="OIP (6).jpg" alt="Photo1" /></div>
-          </div>
-          <div class="container">
-            <div class="text">
-              <p>Taman Negara Pulau Pinang</p>
-            </div>
-            <div class="im"><img src="OIP (9).jpg" alt="Photo1" /></div>
-          </div>
-          <div class="container">
-            <div class="text">
-              <p>George Town</p>
-            </div>
-            <div class="im"><img src="OIP (10).jpg" alt="Photo1" /></div>
-          </div>
-          <div class="container">
-            <div class="text">
-              <p>Pinang Peranakan Mansion</p>
-            </div>
-            <div class="im">
-              <img
-                src="courtyard-decoration.jpg"
-                alt="Photo1"
-                width="500"
-                height="375"
-              />
-            </div>
-          </div>
-        </div>
-
-        <div id="hotels" class="content-section" style="display: none">
+        <div id="hotels" class="content-section">
           <div class="hotel-card">
             <div class="hotel-image">
               <img src="g-hotel-kelawai.jpg" alt="G Hotel Kelawai" />
@@ -281,7 +239,7 @@
               </div>
             </div>
           </div>
-        
+  
           <div class="hotel-card">
             <div class="hotel-image">
               <img src="caption.jpg" alt="Hotel ABC" />
@@ -310,7 +268,7 @@
               </div>
             </div>
           </div>
-        
+  
           <!-- 修正后的第三个酒店 -->
           <div class="hotel-card">
             <div class="hotel-image">
@@ -341,7 +299,7 @@
             </div>
           </div>
         </div>
-        
-    </div>
-  </body>
-</html>
+      </div>
+    </body>
+  </html>
+  
